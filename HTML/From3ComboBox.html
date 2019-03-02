@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Combobox or Dropdown list</title>
+    </head>
+
+    <body>
+
+        <!--dropdown list-->
+        <form>
+            <select name="Select languages" id="languages">
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="php">PHP</option>
+                <option value="javascript">JavaScript</option>
+            </select>
+
+            <button type="button" onclick="getDropdownData()">Submit</button>
+        </form>
+
+        <h4>Selected index is : </h4> <span id="show"></span>
+        <br><br><br>
+
+        <!-- Textarea -->
+        <h2>TextArea</h2>
+        <form>
+            <textarea id="textArea" name="message" rows="20" cols="50" 
+            placeholder="Please enter your message here...."></textarea>
+            <br>
+            <button type="button" onclick="getTextAreaData()">Submit</button>
+        </form>
+
+        <span id="showTextAreaMsg"></span>
+        <br><br><br>
+        <!-- datalist -->
+
+        <form>
+            <input list="browsers" name="browser">
+            <datalist id="browsers" name="browser">
+                <option value="Internet Explorer"></option>
+                <option value="Firefox"></option>
+                <option value="Chrome"></option>
+                <option value="Opera"></option>
+            </datalist>
+            <button type="button">Submit</button>
+            <span id="dataListItem"></span>
+        </form>
+
+        
+
+        <script>
+
+            //  get the data from dropdown list
+            function getDropdownData() {
+                var x = document.getElementById("languages");
+                //  if i want to select the text of the dropdown list
+                var data = x.options[x.selectedIndex].text;
+                //  if i want to s elect the value of the dropdown list
+                // var data = x.options[x.selectedIndex].value;
+                document.getElementById("show").innerHTML = data;
+            }
+
+            //  get the text area data
+            function getTextAreaData() {
+                var x = document.getElementById("textArea").value;
+                document.getElementById("showTextAreaMsg").innerHTML = x;
+            }
+
+
+            //  get the datalist item
+            function getDataListItem() {
+                var x = document.getElementById("browsers");
+                var data = x.options[x.selectedIndex].value;
+                document.getElementById("dataListItem").innerHTML = data;
+            }
+        </script>
+
+    </body>
+</html>

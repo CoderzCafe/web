@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>JavaScript Object</title>
+
+        <style>
+        
+        </style>
+
+    </head>
+
+    <body>
+
+        <span class="arraysItem">Arrays items will be show here</span>
+        <ul class="items"></ul>
+
+        <script type="text/javascript">
+            
+            /** javaScript objects **/
+
+            var str = "JsObject";
+            var name = "HelloWorld";
+            
+            if(str.localeCompare("jsobject")) {
+                for(var i=0; i<5; i++) {
+                    document.write("<span>Js object </span>");
+                }
+            } if(name.localeCompare("Helloworld")) {
+                for(var i=0; i<10; i++) {
+                    document.write("<br>Hello world</br>");
+                }
+            }
+
+            var arr = new Array();
+            arr.push("1. Shine");
+            arr.push("2. Sudipto");
+            arr.push("3. CoderzCafe");
+
+            for(var i=0; i<arr.length(); i++) {
+                document.getElementById('arraysItem').innerHTML(i+"<br>");
+            }
+
+            var person = {firstName: "Sudipto", lastName: "Shahin"};
+
+            document.getElementById('items').innerHTML = "First name: " +person.firstName + "<br>Last name: " +person.lastName;
+
+        </script>
+
+    </body>
+</html>

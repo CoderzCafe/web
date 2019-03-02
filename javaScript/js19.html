@@ -1,0 +1,43 @@
+<!DCOTYPE html>
+<html>
+    <head>
+        <title>JavaScript Error</title>
+    </head>
+
+    <body>
+
+        <input type="text" id="demo">
+        <br><br>
+        <button type="button" onclick="myCheckingFunction()">
+        Test</button><br>
+        <span id="m" style="color:red; font-size:13px;"></span><br>
+        <span id="mm" style="color:red; font-size:13px;"></span>
+
+        <script>
+            function myCheckingFunction() {
+                var msg, x, num;
+                msg = document.getElementById("m");
+                msg.innerHTML = "";
+                x = document.getElementById("demo").value;
+
+                try {
+                    if(x == "") {
+                        throw "Empty";
+                    } if(isNaN(x)) {
+                        throw "not a number";
+                    } if(x >= 10) {
+                        throw "too high";
+                    } if(x < 0) {
+                        throw "too low";
+                    } if(x >= 0 && x <= 10) {
+                        document.getElementById("mm").innerHTML = 
+                        "Entered number is " +xx;
+                    }
+                } catch(err) {
+                    msg.innerHTML = "<br>Input is " +err;
+                }
+            }
+        </script>
+
+    </body>
+</html>

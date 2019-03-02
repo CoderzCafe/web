@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <title>The Class Attribute</title>
+        
+        <style>
+            .city {
+                background-color:tomato;
+                color:white;
+                padding: 10px;
+            }
+            
+            .main {
+                text-align: center;
+            }
+        </style>
+    </head>
+    
+    <body>
+    
+        <h2>The <i>class</i> attribute specifies one or more class names for an HTML element.
+        </h2>
+        
+        <p>Click the button to hide all elements with the class name "city", with javaScript</p>
+        
+        <button onclick="myFunction()">Hide elements</button>
+        
+        <h2 class="city">London</h2>
+        <p>The capital of england</p>
+        
+        <h2 class="city">Dhaka</h2>
+        <p>The capital of bangladesh</p>
+        
+        <h2 class="city">Paris</h2>
+        <p>The capital of france</p>
+    
+        <script>
+            function myFunction(){
+                var x = document.getElementsByClassName("city");
+                
+                for(var i=0; i<x.length; i++){
+                    x[i].style.display = "none";
+                }
+            }
+        </script>
+        
+        <br><br>
+        <h2>Multiple Classes</h2>
+        <p>Multiple classes should be seperated by space</p>
+        <h2 class="city main">Dhaka</h2>
+        <h2 class="city">London</h2>
+        <h2 class="city">Paris</h2>
+        
+    </body>
+
+</html>

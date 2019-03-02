@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Math</title>
+</head>
+<body>
+
+	<h2 id="demo1"></h2>
+	<h2 id="demo2"></h2>
+	<h2 id="demo3"></h2>
+	<h2 id="demo4"></h2>
+	<h2 id="demo5"></h2>
+
+	<button id="randomNumber" onclick="randomNumberFuc(0, 9)">Click</button>
+
+	<script type="text/javascript">
+		var num1 = 4.3036
+
+		document.getElementById("demo1").innerHTML = "PI = " +Math.PI;
+
+		//	Math.round()
+		document.getElementById("demo2").innerHTML = "Round : " +Math.round(num1);
+		// Math.pow()
+		document.getElementById("demo3").innerHTML = "Pow(2^3) = " +Math.pow(2, 3);
+		//	Math.sqrt()
+		document.getElementById("demo4").innerHTML = "sqrt 64 = " +Math.sqrt(64);
+
+		//	Math.abs(-5.7);
+		document.getElementById("demo5").innerHTML = "Absolute value(-5.7): " +Math.abs(-5.7);
+		// Math.ceil(x) returns the value of x rounded up to its nearest intege
+		document.write("ceil : "+num1+" - " +Math.ceil(num1));
+
+		//	Math.floor(x) returns the value of x rounded down to its nearest integer
+		document.write("<br>"+num1+" : " +Math.floor(4.77));
+
+		//	sin(90*pi/ 180)
+		document.write("<br>" + "Sin: " +Math.sin(90 * Math.PI) / 180);
+		//	cos
+		document.write("<br>" + "Cos " +Math.cos(90 * Math.PI) / 180);
+
+		var findMin = [10, 10, 1, 5, 8, -6, 0, 11];
+		document.write("<br>" + Math.min(10, 10, 1, 5, 8, -6, 0, 11));
+
+		//	Math.random()
+		document.write("<br>" +Math.floor(Math.random(10)));
+
+		document.write("<br>" +Math.floor(Math.random() * 10) * 1);
+
+
+		//	button random number function
+		function randomNumberFuc(min, max) {
+			return Math.floor(Math.random() * (max - min) + min);
+		}
+
+	</script>
+
+</body>
+</html>

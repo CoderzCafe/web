@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Random number</title>
+</head>
+<body>
+
+	<button id="randomNumberButton" type="button" onclick="document.getElementById('demo').innerHTML = randomNumberFuc(0, 10)" >Click me</button>
+	<h2 id="demo"></h2>
+
+	<br>
+	<br>
+	<h3>Get today</h3>
+	<button type="button" onclick="document.getElementById('demo1').innerHTML = getTodayDate(new Date().getDay())">Show date</button>
+	<h4 id="demo1"></h4>
+
+
+	<script type="text/javascript">
+		
+		function randomNumberFuc(min, max) {
+			return Math.floor(Math.random() * (max - min)) + min;
+		}
+
+		var i = 0;
+		var txt = "";
+		while (i < 10) {
+			txt += "<br>The number is : " +i;
+			i++;
+		}
+
+		document.write(txt);
+
+		//	get the date
+		function getTodayDate(day) {
+			var today = "";
+			while(day >=0 && day <= 6) {
+				if (day == 0) {
+					today = "Satureday";
+				} else if(day == 1) {
+					today = "Sunday";
+				} else if(day == 2) {
+					today = "Monday";
+				} else if(day == 3) {
+					today = "Tuesday";
+				} else if(day == 4) {
+					today = "Wednesday";
+				} else if(day == 5) {
+					today = "Thursday";
+				} else if(day == 6) {
+					today = "Friday";
+				}
+			}
+			return today;
+		}
+
+		document.write(new Date().getDay());
+	</script>
+
+</body>
+</html>

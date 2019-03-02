@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Object</title>
+</head>
+<body>
+
+	<h3 id="demo"></h3>
+
+	<script type="text/javascript">
+		var obj = {name: "shine",
+					age: 21,
+					salary: 200000};
+		document.getElementById("demo").innerHTML = "Name : " +obj.name+
+		"<br>" + "Age : " +obj.age+ "<br>"+"salary : " +obj.salary;
+
+		var txt = "";
+		//	array
+		var number = [45, 4, 5, 7, 9];
+		number.forEach(myFunction);
+
+		function myFunction(value, index, array) {
+			txt = txt + value + "<br>";
+		}
+
+		var text = "";
+		var names = ["Sudipto", "Shahin", "HelloWorld"];
+		names.forEach(myFunction);
+		document.write(txt);
+		function myFunction(value, index, array) {
+			text = text + value + "<br>";
+		}
+
+		document.write(text);
+
+		//	map()
+		var number1 = [45, 9, 8, 7, 1];
+		document.write(number1.map(myFunction));
+
+		function myFunction(value, index, array) {
+			return value;
+		}
+		document.write("<br>");
+		//	filter
+		document.write(number1.filter(myFunction));
+		function myFunction(value, index, array) {
+			return value += value;
+		}
+	
+	</script>
+
+</body>
+</html>

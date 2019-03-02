@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript RegularExpression</title>
+    </head>
+
+    <body>
+        <h3 id="demo" style="background-color:tomato; color:white;
+         font-family:roboto; text-align: center;">RegularExpression</h3>
+
+
+        <script>
+            //      regular expression
+
+            var patt = /w3schools/i;
+            document.writeln("<br>" +patt);
+
+            var str = "Visit Coderzcafe.com";
+            var n = str.search("c");
+            document.writeln("<br>" +n);
+            patt = "";
+            for(var i=6; i<str.indexOf("."); i++) {
+                patt += str.charAt(i);
+            }
+            document.write("<br>" +patt);
+        </script>
+
+    </body>
+</html>

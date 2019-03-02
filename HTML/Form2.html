@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form2</title>
+    </head>
+
+    <body>
+        <!--Forms-->
+
+        <form action="JsAction.js" id="fromOne">
+            <p>Text input : </p>
+            <input type="text" name="textInput" value="text-input" onclick="">
+            <button type="button" id="nameInput" onclick="showNameText()"> click </button>
+            <p id="showName"></p>
+
+            <p>Select gender</p>
+            <span>Male</span><input type="radio" name="Male">
+            <span>Female</span><input type="radio" name="Female">
+
+            <p>Please select the one</p>
+            <span>Spring</span> &nbsp; <input type="checkbox" name="checkBox" value="selected"><br>
+            <span>JavaFx</span> &nbsp; <input type="checkbox" name="checkBox" value="selected"><br>
+
+            <p>Please select color(Color input)</p>
+            <input type="color" name="colorInput" value="green"><br>
+
+            <p>Please input your date</p>
+            <input type="date" name="date" value="10/24/2018">
+
+            <p>Enter date and time</p>
+            <input type="datetime" name="dateTime">
+
+            <p>Enter your email</p>
+            <input type="email" name="email" value="ex@gamil.com">
+
+            <p>Upload file</p>
+            <input type="file" name="fileInput">
+
+            <p>Upload a image</p>
+            <input type="image" name="imageInput" value="boat.jpg">
+
+            <p>Enter a number</p>
+            <input type="number" name="numberInput">
+
+            <p>Enter your password</p>
+            <input type="password" name="pwdInput">
+
+            <p>Enter a url</p>
+            <input type="url" name="urlInput">
+
+            <script>
+                function showNameText(){
+                    var variable = document.getElementById('textInput').value;
+                    document.getElementById('alert').innerHTML = 'The user input is: ' + variable;
+                }
+            </script>
+
+        </form>
+
+    </body>
+</html>

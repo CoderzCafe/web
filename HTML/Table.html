@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+    <title>HTML table</title>
+    <style>
+        table {
+            border:1px solid black;
+            border-spacing: 5px;
+            width:100%;
+        }
+        td, th {
+            padding: 2px;
+        }
+        
+        td {
+            background-color:darkorange;
+            color:white;
+            text-decoration: none;
+        }
+        tr:nth-child(even){
+            background-color: azure;
+        }
+        
+        img {
+            height: 300px;
+            width: 450px;
+        }
+    
+    </style>
+    
+    </head>
+    
+    <body>
+        <p style="font-size: 30px; background-color: tomato; padding: 30px;">
+        <font color="white">HTML Table</font>
+        </p>
+        
+        <table>
+            <th>First Name</th>
+            <th>Last name</th>
+            <th>City</th>
+            
+            <tr>
+                <td>Sudipto</td>
+                <td>Shahin</td>
+                <td>Dhaka</td>
+            </tr>
+            
+            <tr>
+                <td>Rahul</td>
+                <td>Ahmed</td>
+                <td>Dhaka</td>
+            </tr>
+            
+            <tr>
+                <td>Badhon</td>
+                <td>Khondokar</td>
+                <td>Rajshahi</td>
+            </tr>
+            
+            <tr>
+                <td>Rakib</td>
+                <td>Partho</td>
+                <td>Dhaka</td>
+            </tr>
+        
+        </table>
+    
+        <!----  another table spans rows ----->
+        <br><br>
+        <table style="width: 100%;">
+            <tr>
+                <th>Name : </th>
+                <td>Shahin</td>
+            </tr>
+            
+            <tr>
+                <th rowspan="2">Contact number</th>
+                <td>01717798914</td>
+            </tr>
+            
+            <tr>
+                <td>01627656433</td>
+            </tr>
+            
+        </table>
+        <br><br>
+        <h2> Table Image</h2>
+        
+        <table>
+            <th>Images</th>
+            
+            <tr>
+                <td><img src="boat.jpg", alt="boat"></td>
+                <td><img src="D:\works\images\beach.jpg", alt="beach"></td>
+                <td><img src="D:\works\images\girl.jpg", alt="girl"></td>
+            </tr>
+            
+            <tr>
+                <td><img src="D:\works\images\salena.gif"></td>
+            </tr>
+            
+        </table>
+    
+    
+    </body>
+    
+</html>

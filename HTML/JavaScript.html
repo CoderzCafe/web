@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <meta http-equiv="refresh" content="5">
+    </head>
+<body>
+
+    <h1>My First JavaScript</h1>
+    <button type="button" onclick="date()"> Display current date and time</button>
+    
+    <script>
+        function date() {
+            document.getElementById("date").innerHTML = Date();
+        }
+    </script>
+    
+    <p id="date"></p>
+    
+    <button type="button", onclick="changeContent()">Click me</button>
+    <p id="content">Hello World</p>
+    
+    <script>
+        function changeContent() {
+            document.getElementById("content").innerHTML = "Heyy Babbyy.!!";
+        }
+    </script>
+    
+    <p id="header">My Header</p>
+    <script>
+        function changeStyle(){
+            document.getElementById("header").style.fontSize = "30px";
+        document.getElementById("header").style.fontFamily = "roboto";
+        document.getElementById("header").style.color = "white";
+        document.getElementById("header").style.backgroundColor = "lightblue";
+        document.getElementById("header").style.padding = "20px";
+        document.getElementById("header").style.textAlign = "center";
+        }
+    </script>
+    
+    <button type=button onclick="changeStyle()">Click here to style the header</button>
+
+</body>
+</html> 

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Arrays</title>
+</head>
+<body>
+
+	<h3 id="demo1"></h3>
+	<h3 id="demo2"></h3>
+	<h3 id="demo3"></h3>
+	<h3 id="demo4"></h3>
+	<h3 id="demo5"></h3>
+	<h3 id="demo6"></h3>
+	<h3 id="demo7"></h3>
+	<h3 id="demo8"></h3>
+	<h3 id="demo9"></h3>
+	<h3 id="demo10"></h3>
+	<h3 id="demo11"></h3>
+	<button onclick="sortTheArray()">Click to sort</button>
+	<h3 id="demo12"></h3>
+	<h3 id="demo13"></h3>
+	<h3 id="demo14"></h3>
+	<h3 id="demo15"></h3>
+
+
+
+	<script>
+
+		var cars = ["Tyoyota", "Audi", "Bufello"];
+		//	print one array
+		document.write(cars[0]);
+
+		var txt = "<ul>";
+		for(var i=0; i<cars.length; i++) {
+			txt += "<li>" + cars[i] +"</li>";
+		}
+		txt += "</ul>"
+		document.getElementById("demo1").innerHTML = txt;
+
+		//	array join method
+		var learn = ["Java", "JavaScript", "Python"];
+		document.getElementById("demo2").innerHTML = learn.join(" - ");
+
+		// array push() and pop() methods
+		learn.push("Android");
+		var db = ["MongoDB", "MySQL"];
+		learn.push(db);
+		learn.pop();	//	pop() removes the last element
+		learn.shift();	//	shift() removes the first element
+		document.getElementById("demo3").innerHTML = showArray(learn);
+		//	adding element on the first by using unshift() method
+		learn.unshift("Java");
+		document.getElementById("demo4").innerHTML = showArray(learn);
+
+		document.getElementById("demo5").innerHTML = "create a new array and pushing the element into it";
+		var arre = [];
+		arre.push("Shine");
+		arre.push("SHahin");
+		arre.push("sudipto");
+		document.getElementById("demo6").innerHTML ="Orginal array: <br>" +showArray(arre);
+
+		//	splice(position, how many items should remove, items...) method remove the element
+		arre.splice (2, 0, "Rahim", "Karim", "Salam");
+		document.getElementById("demo7").innerHTML ="New array : </br>"+ showArray(arre);
+
+		// removing item from the array splice()
+		arre.splice(0, 1);
+		document.getElementById("demo8").innerHTML = "removing the 1st element: <br>" +showArray(arre);
+		// removing from the index 1 to 3
+		arre.splice(1, 3);
+		document.getElementById("demo9").innerHTML = "removing element: <br>" +showArray(arre);
+
+		//	concat() -> mergin the arrays 
+		var myArray = learn.concat(arre);
+		document.getElementById("demo10").innerHTML = "Concat() adding all array: <br>"+ showArray(myArray);
+
+		var fruitesfruites = ["Apple", "Mango", "Bananna", "Orange", "Kiwi"];
+		
+		document.getElementById("demo11").innerHTML = fruites.toString();
+
+		//	sorting method -> sort()
+		function sortTheArray() {
+			//	sort the fruits array
+			fruites.sort();
+			document.getElementById("demo12").innerHTML = "Sorting the fruits" + showArray(fruites);
+
+		}
+
+		function showArray(array) {
+			var text = "<ul>";
+			for(var i=0; i<array.length; i++){
+				text += "<li>" +array[i]+ "</li>";
+			}
+			text += "</ul>";
+			return text;
+		}
+
+
+	</script>
+
+</body>
+</html>

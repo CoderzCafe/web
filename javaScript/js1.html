@@ -1,0 +1,38 @@
+<!doctype>
+<html>
+<head>
+	<title>JavaScript1</title>
+
+	<script src="myJavaScript.js">
+		function myFunction(){
+			document.getElementById("demo").innerHTML = "Hello JavaScript";
+		}
+	</script>
+
+</head>
+
+<body>
+	<h2 id="demo"></h2>
+	<p id="paragraph"></p>
+
+	<button type="button" onclick="document.getElementById('paragraph').style.fontSize = '40px';">Click here to change</button>
+
+	<!--- hide the header --->
+	<button type="button" onclick="document.getElementById('demo').style.display = 'none';">Hide the header</button>
+	<!-- show the hide element -->
+	<button type="button" onclick="document.getElementById('demo').style.display = 'block';">Show the hide element</button>
+
+	<!-- change the header -->
+	<button type="button" onclick="myFunction()">Change the header</button>
+	
+	<script type="text/javascript">
+		document.getElementById("demo").innerHTML = "Hello World";
+		document.getElementById("paragraph").innerHTML = "This is a paragraph";
+
+		document.getElementById("demo").style.fontSize = "35px";
+		document.getElementById("paragraph").style.fontSize = "20px";
+	</script>
+
+</body>
+
+</html

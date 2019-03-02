@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Computer code</title>
+    </head>
+
+    <body>
+        <h2>The code element</h2>
+        <h4>Code example</h4>
+
+        <pre>
+        <code>
+            public class Person { 
+                private String name; 
+                private String age; 
+
+                public Person(String name, String age) {
+                    this.name = name;
+                    this.age = age;
+                }
+
+                public void setName(String name) {
+                    this.name = name;
+                }
+                public String getName() {
+                    return name;
+                }
+
+                public static void main(String[] args) {
+                    System.out.println("Name " +new Person("Shahin", "24").getName());                    
+                }
+            }
+        </code>
+        </pre><br>
+        <h5>Output is</h5>
+        <samp>
+            name Shahin
+        </samp>
+
+    </body>
+</html>

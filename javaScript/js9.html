@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Numbers</title>
+</head>
+<body>
+	<h2>Infinity is returned if you calculate a number outside the largest possible number: </h2>
+	<p id="demo"></p>
+
+	<h3 id="demo1"></h3>
+	<h3 id="demo2"></h3>
+	<h3 id="demo3"></h3>
+	<h3 id="demo4"></h3>
+	<h3 id="demo5"></h3>
+	<h3 id="demo6"></h3>
+	<h3 id="demo7"></h3>
+
+	<script>
+		var myNumber = 2;
+		var txt = "";
+		while (myNumber != Infinity) {
+			myNumber *= myNumber;
+			txt += myNumber + "<br>";
+		}
+
+		document.getElementById("demo").innerHTML = txt;
+
+		var number = 32;
+		document.getElementById("demo1").innerHTML = "Decimal : " + number.toString(10)+ "<br>"
+			+"Hexadecimal : " +number.toString(16)+ "<br>"
+			+"Octal : " +number.toString(8)+ "<br>"
+			+"Binary : " +number.toString(2);
+
+		var x = 3.1416;
+		document.getElementById("demo2").innerHTML = "2 : " + x.toExponential(2) +"<br>" + "4: " +x.toExponential(4)+ "<br>"+ "8 : " +x.toExponential(8);
+
+	</script>
+
+</body>
+</html>

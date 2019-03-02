@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Datatypes</title>
+</head>
+<body>
+	<!-- 
+		there are 3 type of datatypes in the javascript
+		1. number
+		2. string
+		3. object
+	-->
+
+	<h2 id="demo1"></h2>
+	<h2 id="demo2"></h2>
+	<h2 id="demo3"></h2>
+
+	<h2 id="demo4"></h2>
+	<h2 id="demo5"></h2>
+
+	<h2 id="demo5"></h2>	
+	<h2 id="demo6"></h2>
+
+	<script>
+		var number = 10;
+		var number1 = 21.7777777777;
+
+		var str1 = "Sudipto";
+		var str2 = "Shahin";
+
+		document.getElementById("demo1").innerHTML = number;
+		// document.getElementById("demo2").innerHTML = number1;
+		// document.getElementById("demo1").innerHTML = obj;
+
+		document.getElementById("demo2").innerHTML = number + number1 + str1;
+		window.alert(str1 + " " +str2);
+
+		var x = 1235e100;
+		document.getElementById("demo3").innerHTML = x;
+
+		/** arrays **/
+		var arrays = ["shine", "sudipto", x, number1];
+		document.write(arrays[1]+" " +arrays[0]);
+
+		/*****  javaScripts object data types  *****/
+		var obj = {firstName: "Sudipto", 
+					lastName: "Shahin", 
+					age: 24, 
+					eyeColor: "black"};
+		document.getElementById("demo4").innerHTML = obj.firstName + " is " +obj.age+ " years old";
+
+
+		/**	typeof operator	**/
+		document.getElementById("demo5").innerHTML = "typeof operator"+ "<br>" + typeof obj.firstName + "<br>"
+			   + typeof obj.age + "<br>"
+			   + typeof obj;
+
+		/** undefined and null value **/
+		document.write("<br>" +typeof str1);
+		var str1 = undefined;
+		document.write("<br>" + typeof str1);
+
+		var nullObj = null;
+		document.write("<br> null is object in javascript(typeof is) : " +typeof nullObj);
+
+		//	primitive data type
+		document.getElementById("demo6").innerHTML = 
+			typeof "john" + "<br>" + 
+			typeof 3.14 + "<br>" +
+			typeof true + "<br>" +
+			typeof false + "<br>" +
+			typeof null + "<br>" +
+			typeof str1 + "<br>";
+
+	</script>
+
+</body>
+</html>

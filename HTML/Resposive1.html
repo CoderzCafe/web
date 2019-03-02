@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Responsive design 1</title>
+        
+        <style>
+            .menu {
+                float :left;
+                width: 20%;
+            }
+            
+            .menuItem {
+                padding: 8px;
+                margin-top: 7px;
+                border-bottom: 1px solid grey;
+            }
+            
+            .main {
+                float: left;
+                width:60%;
+                padding:0 20px;
+                overflow: hidden;
+            }
+            
+            .right {
+                background-color:lightblue;
+                float: left;
+                width:20%;
+                padding: 10px 15px;
+                margin-top:7px;
+            }
+            
+            @media only screen and (max-width:800px){
+                .main {
+                /*  for tablet */
+                width: 80%;
+                padding:0;
+                }
+                
+                .right {
+                    width:100%;
+                }
+            }
+            
+            @media only screen and (max0width:500px){
+                /* for mobile */
+                .menu, .main, .right {
+                    width:100%;
+                }
+            }
+        
+        </style>
+    </head>
+    
+    <body>
+        <div style="background-color: lightblue;
+                    color:black; padding:20px;">
+            <h1>Cinque Teree</h1>
+        </div>
+        
+        <!--- menu --->
+        <div style="overflow: auto;">
+            <div class="menu">
+                <div class="menuItem">The Walk</div>
+                <div class="menuItem">Transport</div>
+                <div class="menuItem">History</div>
+                <div class="menuItem">Gallary</div>
+            </div>
+        </div>
+        
+        <div class="main">
+            <h2>The Walk</h2>
+            <p>The walk from Monterosso to Riomaggiore will take you approximately two hours, give or take an hour depending on the weather conditions and your physical shape.</p>
+            
+            <img src="D:\works\images\beach.jpg" style="width:100%">
+        </div>
+        
+        <div class="right">
+            <h2>What?</h2>
+            <p>Cinque Terre comprises five villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore.</p>
+            
+            <h2>Where?</h2>
+            <p>On the northwest cost of the Italian Riviera, north of the city La Spezia.</p>
+            
+            <h2>Price?</h2>
+            <p>The walk is free!</p>
+        </div>
+        
+        <div style="background-color:#f1f1f1;text-align:center;padding:10px;margin-top:7px;font-size:12px;">
+            This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.
+        </div>
+    
+    
+    </body>
+    
+</html>

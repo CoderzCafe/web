@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Strings</title>
+</head>
+<body>
+
+	<h2 id="demo1"></h2>
+	<h2 id="demo2"></h2>
+	<h2 id="demo3"></h2>
+	<h2 id="demo4"></h2>
+	<h2 id="demo5"></h2>
+
+	<h2 id="demo6"></h2>
+	<h2 id="demo7"></h2>
+	<h2 id="demo8"></h2>
+	<h2 id="demo9"></h2>
+
+	<script>
+		var str1 = "Hello World";
+		var str2 = "My Name is 'Shahin'";
+		var str3 = "hdkajhdkjahjkadhkjahdajdhakjdhkajhdakjdhakjdhakj";
+
+		document.getElementById("demo1").innerHTML = str1;
+		document.getElementById("demo2").innerHTML = str2;
+
+		document.getElementById("demo3").innerHTML = "str3 : " +str3;
+		document.getElementById("demo4").innerHTML = "length of str3 : " +str3.length;
+
+		var string = new String(str1);
+		// document.write(typeof string);
+		document.write("<br>" +str1 == string +"<br>");
+
+		var str = "Please locate where 'locate' occurs";
+		document.getElementById("demo5").innerHTML = str.indexOf("locate");
+
+		document.getElementById("demo6").innerHTML = str.lastIndexOf("shine");
+		document.getElementById("demo7").innerHTML = str.search("locate");
+		document.write("<br>" +str.indexOf("locate") === str.search("locate"));
+
+		//	string method slice();
+		var string1 = "Apple, Bananna, Kiwi";
+		var res = string1.slice(7, 14);
+		document.getElementById("demo8").innerHTML = res;
+
+		//	substring() method
+
+		var string2 = "Apple, Bananna, Kiwi";
+		var res = string2.substring(7, 14);
+		document.getElementById("demo9").innerHTML = res;
+
+	</script>
+
+</body>
+</html>

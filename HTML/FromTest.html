@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>From test</title>
+    </head>
+
+    <body>
+
+        <div>
+            <form id="form" method="POST">
+                <span id="idTxt">User id :</span> <input name="userId" type="text" id="userId"> <br> <br>
+                <span id="pwdTxt">Password : </span> <input name="password" type="password" id="userPwd"><br>
+                <input id="submit" name="submit" type="submit" onclick="subAction()">
+            </form>
+        </div>
+
+        <style>
+            body {
+                background-image: url(bg.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            div {
+                background-image: url(div_bck.png);
+                height: 200px;
+                width: 300px;
+                margin: 200px;
+                margin-left: 460px;
+                padding:50px;
+            }
+
+            input {
+                height: 18px;
+                font-family: roboto;
+            }
+
+            #form {
+                margin-top: 50px;
+                margin-left: 25px;
+            }
+
+            span {
+                font-family:roboto;
+                font-weight: bold;
+                font-size: 16px;
+                color:black;
+                text-align: left;
+            }
+
+            #idTxt {
+                margin-left: 20px;
+            }
+
+            #submit {
+                margin-left: 170px;
+                margin-top: 20px;
+                height: 35px;
+                width: 80px;
+                font-family: roboto;
+                font-size:16px;
+                font-weight: bold;
+                background-color: #388e3c;
+                color: white;
+                border: none;
+            }
+        </style>
+
+        <script>
+            function subAction() {
+            var id = document.getElementById("userId").value;
+            var pwd = document.getElementById("userPwd").value;
+
+            if(id == "shine" && pwd == "shine") {
+                alert("You have login successfully...");
+            } else {
+                alert("Please enter the correct id and password");
+            }
+         }
+
+        </script>
+
+    </body>
+</html>

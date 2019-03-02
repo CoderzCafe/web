@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <title>ID Attribute</title>
+        
+        <style>
+            #myHeader {
+                background-color:lightblue;
+                color:black;
+                padding:40px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h2>ID Attribute</h2>
+        <p style="background-color: tomato;
+                  color:white; font-size: 15px;">Id is a unique thing to perform a certain task</p>
+        <h1 id="myHeader">My Header</h1>
+    
+        <h2>Using the Id Attribute in JavaScript</h2>
+        <p>JavaScript can access an element with a specified id by using the gerElementById() method</p>
+        
+        <button onclick="displayResult()">Change text</button>
+        
+        <script>
+            function displayResult() {
+                document.getElementById("myHeader").innerHTML = "Have a nice day.!";
+            }
+        </script>
+        
+    </body>
+
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <title>CSS BackgroundProperty</title>
+        <style>
+            h1 {
+                backgound-color:green;
+            }
+            
+            body {
+                background-color: lightblue;  
+            }
+            
+            #bgProperty {
+                background-image: url('img.jpg');
+                height: 200px;
+                width: 500px;
+                background-repeat: no-repeat;
+                color: aliceblue;
+            }
+            
+            #imagePosition {
+                background-image:url('img2.jpg');
+                background-repeat:no-repeat;
+                background-position: left;
+                background-attachment: fixed;
+                height: 500px;
+                width:800px;
+            }
+            
+            p {
+                background-color:yellowgreen;
+            }
+        
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <h1>Working with CSS Background</h1>
+        <div id="bgProperty">
+            <p>CSS background properties:</p>
+            <ul>
+                <li>background-color</li>
+                <li>background-image</li>
+                <li>background-repeat</li>
+                <li>background-attachment</li>
+                <li>background-position</li>
+            </ul>
+        </div>
+        
+        <!---   image position  --->
+        <div id="imagePosition">
+            <p class="pos">This field is about image position</p>
+        </div>
+        
+    </body>
+</html>

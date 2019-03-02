@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Function</title>
+</head>
+<body>
+
+	<h1 style="background-color: tomato; color:white;">Here we call a function, it will performs and returns a result</h1>
+	<h2 id="demo1"></h2>
+	<h2 id="demo2"></h2>
+	<h2 id="demo3"></h2>
+	<h2 id="demo4"></h2>
+	<h2 id="demo5"></h2>
+
+	<script>
+		function myFunctionOne(n1, n2){
+			return n1*n2;
+		}
+
+		document.getElementById("demo1").innerHTML = myFunctionOne(10, 20);
+
+		/** grade function **/
+		function gradeFunction(result) {
+			var grade = "";
+			if(result >= 80 && result <= 100) {
+				grade = "A+";
+			} else if(result >= 70 && result < 80) {
+				grade = "A";
+			} else if(result >= 60 && result < 70) {
+				grade = "A-";
+			} else if(result >= 50 && result < 60) {
+				grade = "B";
+			} else if (result >= 40 && result < 50) {
+				grade = "C";
+			} else if(result >= 33 && result < 40) {
+				grade = "D";
+			} else {
+				grade = "F";
+			}
+			return grade;
+		}
+
+		document.getElementById("demo2").innerHTML = "Mark = 60 <br>" + "Grade = " +gradeFunction(60);
+
+	</script>
+
+</body>
+</html>

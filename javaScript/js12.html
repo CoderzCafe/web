@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Comparison</title>
+</head>
+<body>
+
+	<h3 id="demo1"></h3>
+	<h3 id="demo2"></h3>
+	<h3 id="demo3"></h3>
+	<h3 id="demo4"></h3>
+	<h3 id="demo5"></h3>
+
+	<script>
+		var x = 5;
+		var str = 5;
+
+		document.write("Equal value or not (x == \"5\")<br>" +(x == str)+ "<br>");
+
+		//	equality
+		document.write("Equal type or not(x === \"5\") <br>" +(x === str)+ "<br>");
+
+		if(2 == NaN) {
+			document.write("2 is not a number");
+		} else {
+			document.write("2 is a number");
+		}
+
+		//	todays day
+		var day;
+		switch(new Date().getDay()) {
+			case 0:
+				day = "Satureday";
+				break;
+			case 1:
+				day = "Sunday";
+				break;
+			case 2:
+				day = "Monday"
+				break;
+			case 3:
+				day = "Tuesday";
+				break;
+			case 4:
+				day = "Wedneday";
+				break;
+			case 5:
+				day = "Thursday";
+				break;
+			case 6:
+				day = "Friday";
+				break;
+		}
+		document.getElementById("demo1").innerHTML = "Today is " +day;
+
+	</script>
+
+</body>
+</html>

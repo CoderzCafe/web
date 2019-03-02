@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Loop</title>
+</head>
+<body>
+
+	<h3>Click the button to know the date</h3>
+	<button type="button" onclick="document.getElementById('showDate').innerHTML = getTheDayString(new Date().getDay())">Click me</button>
+	<h4 id="showDate"></h4>
+
+
+	<script type="text/javascript">
+		document.write("For Loop");
+		for(var i=0; i<10; i++) {
+			document.write("<br>" +i);
+		}
+		document.write("<br> Today is : " +new Date().toDateString());
+
+		var d = new Date();
+		document.write("<br> Day : " +d.getDay());
+
+
+		function getTheDayString(day) {
+			var txt;
+			while (day <= 6) {
+				if (day == 0) {
+					txt = "Sunday";
+					break;
+				} else if(day == 1) {
+					txt = "Monday";
+					break;
+				} else if(day == 2) {
+					txt = "Tuesday";
+					break;
+				} else if(day == 3) {
+					txt = "Wednesday";
+					break;
+				} else if(day == 4) {
+					txt = "Thursday";
+					break;
+				} else if(day == 5) {
+					txt = "Friday";
+					break;
+				} else if(day == 6) {
+					txt = "Satureday";
+					break;
+				}
+			}
+			return txt;
+		}
+
+	</script>
+
+</body>
+</html>

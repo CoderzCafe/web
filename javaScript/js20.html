@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Functions extra</title>
+    </head>
+
+    <!-- <script>
+        function meatBall(x) {
+            alert("I love " +x);
+        }
+        meatBall("Becon");
+        
+        var x = 5;
+        do {
+            document.write(x+ " Hello <br>");
+            x += 5;
+        } while(x <= 20);
+    </script> -->
+
+    <body>
+
+        <p>Please enter your name : </p>
+        <input type="text" name="nameInput" id="nameText" onclick='javascript:alert(getName())'>
+        <button type="button" onclick='showName()'>Show</button>
+        <h5 id="showText"></h5>
+
+        <script>
+
+            function getName() {
+                var name = document.getElementById("nameText").value;
+                return name;
+            }
+
+            function showName() {
+                var x = document.getElementById("nameText").value;
+                document.getElementById("showText").innerHTML = x;
+            }
+
+             var input = document.getElementById("nameText").value;
+            input.addEventListener("keyup", function(event) {
+                event.preventDefault();
+                if (event.keyCode == 13) {
+                    document.getElementById("showText").click();
+                }
+            });
+        </script>
+        
+    </body>
+</html>
